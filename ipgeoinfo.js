@@ -24,7 +24,8 @@ function getIpGeoLocation(){
     }
     //httpRequest.onreadystatechange = alertContents;
     httpRequest.onreadystatechange = function(response) {
-        if(httpRequest.readyState === XMLHttpRequest.DONE && httpRequest.status == 200)
+        //if(httpRequest.readyState === XMLHttpRequest.DONE && httpRequest.status == 200)
+        if(httpRequest.readyState === XMLHttpRequest.DONE)
         {
             //console.log("response: ", response);
             //alert(httpRequest.responseText);
