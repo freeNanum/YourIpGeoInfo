@@ -1,0 +1,29 @@
+body {
+    background-color: rgba(0, 225, 255, 0.075);
+    /* font-family: "Arial Black", Helvetica, sans-serif; */
+    font-family: sans-serif;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.829);
+    text-align: left;
+}
+
+h1 {
+    color: white;
+    background-color: rgba(0, 140, 255, 0.856);
+    text-align: left;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+h3 {
+    color: white;
+    background-color: rgba(102, 255, 0, 0.164);
+    text-align: justify;
+    font-size: 15px;
+    font-family: "Arial Black";
+}
+  
+p {
+    font-family: sans-serif;
+    font-size: 10px;
+}

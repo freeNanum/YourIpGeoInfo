@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>당신의 IP, 위치정보</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="weatherAPI.js"></script>
+<script src="weatherinfo.js"></script>
+<script src="ipgeoinfo.js"></script>
+<script type="text/javascript">
+    getIpGeoLocation();
+    getWeatherInfo();
+</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="vis-weather">
+        <h1 class="vh_hide">당신의 IP, 위치정보</h1>
+        <!-- <div>
+            <h2 class="vh_hide">
+                <p class="weather-date"></p>
+            </h2>
+            <ul>
+                <li class="weather-temp"></li>
+                <li id="RN1">시간당강수량 : ?</li>
+                <li class="weather-state-text"></li>
+            </ul>
+        </div> -->
+        <!-- <div>
+            <p id="allweather"></p>
+        </div> -->
+        <div>
+            <p id="ip"></p>
+        </div>
+        <div>
+            <p id="city"></p>
+        </div>
+        <div>
+            <p id="region"></p>
+        </div>
+        <div>
+            <p id="country"></p>
+        </div>
+        <div>
+            <p id="org"></p>
+        </div>
+        <div>
+            <p id="loc"></p>
+        </div>
+ 
+    </div>
+    <div>
+        <h3><a href="http://cafe.daum.net/opensupport.xyz/">(c)오픈서포트, www.opensupport.xyz</a></h3>
+    </div>
+</body>
+</html>
