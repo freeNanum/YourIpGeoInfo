@@ -1,5 +1,5 @@
 function getIpGeoLocation(){
-    var ipLocURL = "http://ipinfo.io/";
+    var ipLocURL = "https://ipinfo.io/";
     ipLocURL += "json";
        
     httpRequest = new XMLHttpRequest();
