@@ -1,5 +1,5 @@
 function getIpGeoLocation(){
-    var ipLocURL = "https://ipinfo.io/";
+    var ipLocURL = "http://ipinfo.io/";
     ipLocURL += "json";
        
     httpRequest = new XMLHttpRequest();
@@ -63,23 +63,23 @@ function getIpGeoLocation(){
             console.log("logitude: ", lngs);
             
 
-            var contentText = document.getElementById('ip');
-            contentText.innerHTML = "# IP주소: " + ip;
+            var contentTextip = document.getElementById('ip');
+            contentTextip.innerHTML = "# IP주소: " + ip;
 
-            var contentText = document.getElementById('city');
-            contentText.innerHTML = "# 도시: " + city;
+            var contentTextcity = document.getElementById('city');
+            contentTextcity.innerHTML = "# 도시: " + city;
 
-            var contentText = document.getElementById('region');
-            contentText.innerHTML = "# 지역: " + region;
+            var contentTextregion = document.getElementById('region');
+            contentTextregion.innerHTML = "# 지역: " + region;
 
-            var contentText = document.getElementById('country');
-            contentText.innerHTML = "# 국가: " + country;
+            var contentTextcountry = document.getElementById('country');
+            contentTextcountry.innerHTML = "# 국가: " + country;
 
-            var contentText = document.getElementById('org');
-            contentText.innerHTML = "# IP 제공기관: " + org;
+            var contentTextorg = document.getElementById('org');
+            contentTextorg.innerHTML = "# IP 제공기관: " + org;
 
-            var contentText = document.getElementById('loc');
-            contentText.innerHTML = "# 위도: " + lats + ", 경도: " + lngs;
+            var contentTextloc = document.getElementById('loc');
+            contentTextloc.innerHTML = "# 위도: " + lats + ", 경도: " + lngs;
 
         
         }
