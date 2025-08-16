@@ -74,6 +74,15 @@ This project is a simple web application that displays your IP-based geolocation
     -   Parses the response and updates the weather information on the page.
     -   **Note:** The current implementation in the provided file has some hardcoded and commented-out parts, and the API key is visible.
 
+### `js_backup` Folder
+
+This folder contains previous versions and alternative implementations of the core JavaScript files.
+
+-   **`conversion.js`**: Contains only the `dfs_xy_conv` function for coordinate conversion, separated from the geolocation logic.
+-   **`weather1st.js`**: An alternative version for fetching weather data using jQuery's `$.ajax` method.
+-   **`weather2nd.js`**: Another alternative version using `$.ajax` with slightly different response handling.
+-   **`weather3rd.js`**: An alternative version using the native `XMLHttpRequest` object for the AJAX request.
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
