@@ -12,9 +12,11 @@ This project is a simple web application that displays your IP-based geolocation
 ## How to Use
 
 1.  Clone or download the repository.
-2.  Open the `index.html` file in your web browser.
-3.  The browser will ask for your permission to access your location. Allow it to get weather information.
-4.  Your IP geolocation and weather information will be displayed on the page.
+2.  Create a `config.js` file in the root directory by copying the `config.sample.js` file: `cp config.sample.js config.js`
+3.  Open `config.js` and enter your KMA API key.
+4.  Open the `index.html` file in your web browser.
+5.  The browser will ask for your permission to access your location. Allow it to get weather information.
+6.  Your IP geolocation and weather information will be displayed on the page.
 
 **Note on CORS:** The KMA weather API may have Cross-Origin Resource Sharing (CORS) restrictions. If you encounter issues, you might need a browser extension to bypass these restrictions for local development. For example, you can use the "Allow CORS: Access-Control-Allow-Origin" extension for Chrome.
 
@@ -23,7 +25,11 @@ This project is a simple web application that displays your IP-based geolocation
 -   **ipinfo.io:** Used to get public IP address and geolocation details (city, region, country, etc.).
 -   **Korean Meteorological Administration (KMA) Open API:** Used to get ultra-short-term weather forecasts (초단기실황조회).
     -   This project uses the `getUltraSrtNcst` operation.
-    -   An API key is required, which is included in the `weatherAPI.js` file. **It is highly recommended to replace this with your own key for any public-facing application.**
+    -   The API key is managed in the `config.js` file, which is ignored by Git to prevent accidental exposure.
+
+### A Note on Security
+
+This method of using a `config.js` file prevents the API key from being committed to the Git repository. However, the key is still loaded into the client-side JavaScript and is **visible to anyone who inspects the browser's network traffic or source code**. For a more secure solution, especially for a publicly deployed application, you should use a server-side proxy to manage the API key. This ensures the key is never exposed to the client.
 
 ## Project Structure
 

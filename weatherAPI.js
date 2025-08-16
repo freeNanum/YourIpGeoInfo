@@ -79,20 +79,18 @@ function Weather(nx, ny){
 
     var _nx = nx;
     var _ny = ny;
-    var apikey = "GsIEPvrEMExP3XquMGH1bYL8tixNTFkfjICqMXpMg3z2%2Fm3GzrMkyvfkwMdk6bidaAPFrsJrojC829XMl0anMQ%3D%3D";
-    var today = year+""+ minutes +""+day;
+    var today = year+""+ month +""+day;
     var basetime = hours + "00";
 
     var url = 'http://apis.data.go.kr/1360000/VilageFcstInfoService/getUltraSrtNcst'; /*URL*/
-    var queryParams = '?' + encodeURIComponent('ServiceKey') + '='+'서비스키'; /*Service Key*/
-    queryParams += '&' + encodeURIComponent('ServiceKey') + '=' + encodeURIComponent('apikey'); /**/
+    var queryParams = '?' + encodeURIComponent('ServiceKey') + '=' + KMA_API_KEY; /*Service Key*/
     queryParams += '&' + encodeURIComponent('pageNo') + '=' + encodeURIComponent('1'); /**/
     queryParams += '&' + encodeURIComponent('numOfRows') + '=' + encodeURIComponent('10'); /**/
-    queryParams += '&' + encodeURIComponent('dataType') + '=' + encodeURIComponent('json'); /**/
-    queryParams += '&' + encodeURIComponent('base_date') + '=' + encodeURIComponent('today'); /**/
-    queryParams += '&' + encodeURIComponent('base_time') + '=' + encodeURIComponent('basetime'); /**/
-    queryParams += '&' + encodeURIComponent('nx') + '=' + encodeURIComponent('_nx'); /**/
-    queryParams += '&' + encodeURIComponent('ny') + '=' + encodeURIComponent('_ny'); /**/
+    queryParams += '&' + encodeURIComponent('dataType') + '=' + encodeURIComponent('JSON'); /**/
+    queryParams += '&' + encodeURIComponent('base_date') + '=' + encodeURIComponent(today); /**/
+    queryParams += '&' + encodeURIComponent('base_time') + '=' + encodeURIComponent(basetime); /**/
+    queryParams += '&' + encodeURIComponent('nx') + '=' + encodeURIComponent(_nx); /**/
+    queryParams += '&' + encodeURIComponent('ny') + '=' + encodeURIComponent(_ny); /**/
 
     // Avoid CORS.
     //fetch('http://apis.data.go.kr/1360000/VilageFcstInfoService/getUltraSrtNcst', {mode: 'no-cors'});
