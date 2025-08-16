@@ -29,13 +29,25 @@ This project is a simple web application that displays your IP-based geolocation
 
 ```
 .
-├── index.html          # The main HTML file
-├── ipgeoinfo.js        # Fetches and displays IP geolocation data from ipinfo.io
-├── weatherinfo.js      # Handles geolocation and converts coordinates for the weather API
-├── weatherAPI.js       # Fetches and displays weather data from the KMA API
-├── styles.css          # Basic styling for the application
-├── js_backup/          # Backup of JavaScript files
-└── OpenAPI-User-Guide(기상청_신규-동네예보정보조회서비스)_v2.5_/ # KMA API documentation
+├── .gitignore          # Specifies intentionally untracked files to ignore
+├── index.html          # The main HTML file for the application
+├── ipgeoinfo.js        # JavaScript for fetching and displaying IP geolocation data
+├── LICENSE             # MIT License file
+├── README.md           # This README file
+├── styles.css          # CSS for styling the application
+├── weatherAPI.js       # JavaScript for fetching weather data from the KMA API
+├── weatherinfo.js      # JavaScript for handling geolocation and coordinate conversion
+├── js_backup/            # Folder containing backup and alternative JS files
+│   ├── conversion.js   # Standalone coordinate conversion script
+│   ├── weather1st.js   # Weather script using jQuery AJAX
+│   ├── weather2nd.js   # Another weather script using jQuery AJAX
+│   └── weather3rd.js   # Weather script using XMLHttpRequest
+├── OpenAPI-User-Guide(기상청_신규-동네예보정보조회서비스)_v2.5_/ # KMA API documentation
+│   ├── 동네예보조회서비스_격자_위경도_20190107.xlsx
+│   └── OpenAPI 사용자 활용가이드(기상청_신규 동네예보정보조회서비스)_v2.5.hwp
+└── response_sample/    # Sample API responses
+    ├── 동네예보조회.json
+    └── 동네예보조회.xml
 ```
 
 ## Code Overview
